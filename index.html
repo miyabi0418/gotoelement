@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>連到指定元素</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body id="top">
+    <nav>
+        <ul>
+            <li data-goto-target="#box1" data-goto-duration="1000">連結1</li>
+            <li data-goto-target="#box2" data-goto-duration="1500">連結2</li>
+            <li data-goto-target="#box3" data-goto-duration="2000">連結3</li>
+            <li data-goto-target="#box4" data-goto-duration="2500">連結4</li>
+            <li data-goto-target="#box5" data-goto-duration="3000">連結5</li>
+        </ul>
+    </nav>
+
+    <div id="box1">區域1</div>
+    <div id="box2">區域2</div>
+    <div id="box3">區域3</div>
+    <div id="box4">區域4</div>
+    <div id="box5">區域5</div>
+
+    <div id="back-to-top" data-goto-target="#top" data-goto-duration="2000">Top</div>
+
+<!--連結jOuery CDN-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="./goToElement.js"></script>
+</body>
+</html>
